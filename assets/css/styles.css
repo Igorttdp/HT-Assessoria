@@ -16,9 +16,9 @@
 
 body {
   color: #ffffff;
-  background-color: #1F2437;
+  background-color: #161d36;
   margin: 0;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Source Serif 4', serif;
   position: relative;
 }
 
@@ -31,11 +31,16 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.8rem, 2.8vw, 5rem);
+  font-size: clamp(3rem, 4vw, 5rem);
+  font-weight: 900;
 }
 
 h3 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.7rem, 1.2vw, 2.7rem);
 }
 
 p {
@@ -63,6 +68,7 @@ a {
 
 /* NAVBAR */
 nav {
+  font-family: 'League Spartan', sans-serif;
   visibility: collapse;
   opacity: 0;
   position: fixed;
@@ -148,6 +154,7 @@ nav {
 
 /* START */
 .container {
+  font-family: 'League Spartan', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,7 +293,7 @@ nav {
   z-index: 1;
 }
 
-.services-box1-cards, .services-box2-cards, .services-box3-cards{
+.services-box1-cards, .services-box2-cards, .services-box3-cards {
   background-color: #131829;
   border-radius: 10px;
   padding: 10px 0;
@@ -376,6 +383,7 @@ nav {
   background-size: cover;
   display: flex;
   min-height: 100vh;
+  font-family: 'Source Serif 4', serif;
 }
 
 #about-us div.section-transition {
@@ -415,7 +423,165 @@ nav {
 }
 
 .history-container p {
-  font-size: clamp(1.5rem, 3.4vw, 2.5rem);
+  font-size: clamp(1.8rem, 3.4vw, 2.5rem);
   text-align: justify;
 }
 
+/* TEAM */
+#team {
+  background: url(../img/Layer4.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 8% 0;
+  position: relative;
+}
+
+#team .section-transition {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(180deg, transparent 0%, #151F32 50%, transparent 100%);
+  position: absolute;
+  top: 0;
+  transform: translateY(-150px);
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 10em auto 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "henrique marilene""elizabeth wallace";
+  row-gap: 10em;
+}
+
+.person:nth-child(1) {
+  grid-area: henrique;
+}
+
+.person:nth-child(2) {
+  grid-area: marilene;
+}
+
+.person:nth-child(3) {
+  grid-area: elizabeth;
+}
+
+.person:nth-child(4) {
+  grid-area: wallace;
+}
+
+.person img {
+  width: 50%;
+}
+
+.person-info {
+  margin-top: 3%;
+}
+
+.person-info p {
+  font-size: clamp(1.5rem, 2.4vw, 1.8rem);
+}
+
+#find-us {
+  color: #000000;
+  background: url(../img/Layer5.png) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#find-us h2 {
+  color: #405775;
+}
+
+#find-us h3 {
+  color: #2F4A69;
+}
+
+#find-us p {
+  font-size: clamp(1.7rem, 2.4vw, 2rem);
+}
+
+.find-us-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2em;
+}
+
+iframe {
+  width: 50vw;
+  height: 30vw;
+  border-radius: 20px;
+}
+
+#find-us.section-size {
+  min-height: 110vh;
+}
+
+/* FOOTER */
+
+footer {
+  background: url(../img/Layer4.png) no-repeat bottom center;
+  background-size: cover;
+}
+
+.footer-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "sm brd ctt";
+  padding: 4% 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#social-medias, #contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2em;
+}
+
+#social-medias {
+  grid-area: sm;
+}
+
+#social-medias img{
+  width: 5vw;
+}
+
+#footer-brand {
+  grid-area: brd;
+}
+
+#footer-brand img {
+  width: 10vw;
+}
+
+#contact {
+  grid-area: ctt;
+}
+
+#contact button {
+  width: 100%;
+  font-size: clamp(2rem, 3.4vw, 2.5rem);
+  border: none;
+  border-radius: 8px;
+}
+
+#southeast-container {
+  background-image: linear-gradient(180deg, transparent 0%, #172C45 10%);
+  padding: 5% 0;
+  text-align: center;
+}
+
+#southeast-container img {
+  width: 10%;
+  margin: 1em 0;
+}
