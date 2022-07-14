@@ -111,8 +111,8 @@
     }
 
     iframe {
-        width: 80vw;
-        height: 50vw;
+        width: 70vw;
+        height: 30vw;
     }
 }
 
@@ -163,7 +163,7 @@
     }
 
     iframe {
-        height: 50vh;
+        height: 60vh;
     }
 
     .footer-container {
