@@ -1,12 +1,11 @@
 function showElements() {
     const navbar = document.querySelector("#navbar");
     const floatBtn = document.querySelector('#float-btn');
-    const navContainer = document.querySelector(".nav-container");
     const menuBtn = document.querySelector("#menu-btn");
     const linkList = document.querySelector(".link-list");
 
     window.onscroll = () => {
-        if(document.documentElement.scrollTop > 100) {
+        if (document.documentElement.scrollTop > 100) {
             navbar.style.visibility = 'initial'
             navbar.style.opacity = '1'
             floatBtn.style.transform = 'translateY(0%)'
@@ -18,12 +17,22 @@ function showElements() {
     }
 
     menuBtn.onclick = () => {
-        if(!linkList.classList.contains("active")) {
+        if (!linkList.classList.contains("active")) {
             linkList.classList.add("active");
         } else {
             linkList.classList.remove("active");
         }
     }
+
+    document.addEventListener('click', (e) => {
+        el = e.target;
+
+        console.log(el)
+        if(el.classList.contains('a-link')) {
+            linkList.classList.remove("active");
+        }
+    });
+
 }
 
 showElements()

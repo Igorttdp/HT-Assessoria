@@ -162,6 +162,10 @@
         transform: translateY(-50px);
     }
 
+    iframe {
+        height: 50vh;
+    }
+
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -225,6 +229,10 @@
 
     #social-medias img {
         width: 16vw;
+    }
+
+    #southeast-container img {
+        width: 30vw;
     }
 }
 

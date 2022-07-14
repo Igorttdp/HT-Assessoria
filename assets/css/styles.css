@@ -585,3 +585,15 @@ footer {
   width: 10%;
   margin: 1em 0;
 }
+
+#southeast-container p {
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+}
+
+#southeast-container a {
+  color: #6036DC;
+}
+
+#southeast-container a:hover, #southeast-container a:visited {
+  color: #af94ff;;
+}
