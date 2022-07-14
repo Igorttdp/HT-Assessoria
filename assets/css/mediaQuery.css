@@ -114,6 +114,10 @@
         width: 70vw;
         height: 30vw;
     }
+
+    #contact button svg {
+        width: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -192,6 +196,10 @@
         flex-flow: column nowrap;
         align-items: center;
     }
+
+    #contact button svg {
+        width: 18px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -245,5 +253,17 @@
 
     #find-us h2 {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "brd"
+            "sm" 
+            "ctt";
+        row-gap: 5em;
     }
 }

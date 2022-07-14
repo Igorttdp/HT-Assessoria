@@ -552,7 +552,7 @@ footer {
   grid-area: sm;
 }
 
-#social-medias img{
+#social-medias img {
   width: 5vw;
 }
 
@@ -570,9 +570,58 @@ footer {
 
 #contact button {
   width: 100%;
-  font-size: clamp(2rem, 3.4vw, 2.5rem);
-  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: transparent;
   border-radius: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+#contact button p {
+  font-size: clamp(2rem, 3.4vw, 2.5rem);
+  margin-left: 5px;
+}
+
+#contact button svg {
+  width: 24px;
+}
+
+#contact button:nth-child(2) {
+  border: 1px solid #23D160;
+  transition: all .3s;
+}
+
+#contact button:nth-child(2):hover {
+  background-color: #23D160;
+  transition: all .3s;
+}
+
+#contact button:nth-child(2):hover svg path {
+  fill: #000000;
+  transition: all .3s;
+}
+
+#contact button:nth-child(3) {
+  border: 1px solid #636363;
+  transition: all .3s;
+}
+
+#contact button:nth-child(3):hover {
+  background-color: #636363;
+  transition: all .3s;
+}
+
+#contact button:nth-child(3):hover svg path {
+  fill: #FFFFFF;
+  transition: all .3s;
+}
+
+svg path {
+  transition: all .3s;
 }
 
 #southeast-container {
@@ -595,5 +644,6 @@ footer {
 }
 
 #southeast-container a:hover, #southeast-container a:visited {
-  color: #af94ff;;
+  color: #af94ff;
+  ;
 }
