@@ -473,6 +473,7 @@ nav {
 
 .person img {
   width: 50%;
+  border-radius: 10px
 }
 
 .person-info {
